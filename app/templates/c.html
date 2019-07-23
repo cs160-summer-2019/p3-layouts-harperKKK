@@ -12,9 +12,51 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
-	</head>
-	<body>
-		<!-- Your layout here -->
+
+    <style type="text/css">
+      #box{
+        width:100px;
+        height:100px;
+        background-color:orange;
+      }
+      
+      #line_2{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        margin-top:30px;
+      }
+      
+      #line_1{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+      }
+      
+      #main{
+        background-color:purple;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-end;
+        height:100vh;    
+      }
+    </style>
+  
+  </head>
+
+	<body id="main">
+    <div id="line_1">
+      <div id="box"></div>
+    </div>
+		<div id="line_2">
+      <div id="box"></div>
+      <div id="box"></div>
+      <div id="box"></div>
+      <div id="box"></div>
+      <div id="box"></div>
+    </div>
+    
 
 	</body>
+
 </html>
